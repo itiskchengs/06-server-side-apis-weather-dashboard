@@ -4,9 +4,10 @@
 /*Setting up */
 :root{
     --background-1: #000;
+    --background-2: #7b7c7b;
     --font-1: #fff;
     --font-2: #000;
-    --form-button: #02386e;
+    --form-button: #253D5B;
 }
 /*=========================
     GENERAL STYLES
@@ -59,7 +60,7 @@ p {
 
 .top-heading{
     padding: 1rem 0rem;
-    background-image: linear-gradient(to right, #02386e , #0052a2);
+    background-image: linear-gradient(to right, #253D5B , #50637B);
 }
 .top-heading h1{
     text-align: center;
@@ -101,6 +102,51 @@ hr{
 }
 .city-result{
     border: 2px solid var(--background-1);
-    height: 50%;
     margin: 1rem 0rem 0rem 0rem;
 }
+.city-result-heading{
+    margin: 2rem
+}
+.city-result-paragraph{
+    margin: 2rem;
+}
+.uv-color{
+    background:green;
+    width: 10%;
+    color:#fff;
+}
+.five-day-container{
+    padding: 0px;
+}
+.five-day-result{
+    margin: 4rem 0rem 0rem 0rem;
+}
+.forecast-container{
+    border: 2px solid var(--background-2);
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 0rem 2rem 0rem 0rem;
+    background-color: var(--background-2);
+    color: var(--font-1);
+}
+.forecast-container p{
+    font-size: 14px;
+}
+.forecast-image{
+    width: 75%;
+}
+
+@media only screen and (max-width: 1600px) {
+    .uv-color{
+        background:green;
+        width: 15%;
+        color:#fff;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .uv-color{
+        background:green;
+        width: 28%;
+        color:#fff;
+    }
+  }
